@@ -131,8 +131,22 @@
       }
     }
   }
+}
 
+.select__server {
+  font-family: "IBMRegu", Helvetica, Arial;
+  height:60px;
+  border-radius: 0 0 20px 20px;
+  text-align: "center";
+  border:none;
+  width:20%;
+  margin:-30px auto 0;
+  option {
+    text-align:center;
+  }
+}
 
-  
-
+input:focus, textarea:focus, select:focus{
+  outline: none;
+  box-shadow: none!important;
 }

@@ -1,5 +1,4 @@
 export const addSpaceToString = string => {
-  console.log({string})
   return string
     .replace(" ", "")
     .toString()

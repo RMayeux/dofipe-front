@@ -32,11 +32,38 @@
         </section>
       </li>
     </ul>
+    <select class="select__server" :value="server" @change="updateServer($event)">
+      <option :key="serverName" v-for="serverName in servers">{{serverName}}</option>
+    </select>
   </section>
 </template>
 <script>
 export default {
   name: "HomePage",
+  data() {
+    return {
+      servers: [
+        "Ombre",
+        "Thanatena",
+        "Atcham",
+        "Rubilax",
+        "Crocabulia",
+        "Furye",
+        "Echo",
+        "Brumen",
+        "Jahash",
+        "Nidas",
+        "Pandore",
+        "Julith",
+        "Mériana",
+        "Agride",
+        "Merkator",
+        "Ush",
+        "Ilyzaelle",
+        "Oto Mustam"
+      ]
+    };
+  },
   props: [
     "entity",
     "ressources",
@@ -44,7 +71,8 @@ export default {
     "itemQuantity",
     "updateItemQuantity",
     "server",
-    "splitNumbers"
+    "splitNumbers",
+    "updateServer"
   ],
   computed: {
     getIcon() {

@@ -50,7 +50,6 @@ export default {
   methods: {
     getEntities() {
       if (this.searchBarValue) {
-        console.log(process.env)
         axios
           .get(
             `${process.env.VUE_APP_API_URL}/entity?name=${this.searchBarValue}&category=equipements`
