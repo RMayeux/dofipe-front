@@ -1,0 +1,40 @@
+@font-face {
+  font-family: FuturaNow;
+  src: url("./fonts/FuturaNowScript.ttf");
+}
+
+@font-face {
+  font-family: FuturaNowLight;
+  src: url("./fonts/FuturaNowScriptLight.ttf");
+}
+@font-face {
+  font-family: FuturaNowExtraLight;
+  src: url("./fonts/FuturaNowScriptExtraLight.ttf");
+}
+@font-face {
+  font-family: FuturaNowBold;
+  src: url("./fonts/FuturaNowScriptBold.ttf");
+}
+@font-face {
+  font-family: FuturaNowExtraBold;
+  src: url("./fonts/FuturaNowScriptExtraBold.ttf");
+}
+@font-face {
+  font-family: Skyer;
+  src: url("./fonts/Skyer-Regular.ttf");
+}
+
+@font-face {
+  font-family: RobotoRegular;
+  src: url("./fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: IBMPlexMonoRegular;
+  src: url("./fonts/IBMPlexMono-Regular.ttf");
+}
+
+@font-face {
+  font-family: IBMPlexMonoRegularBold;
+  src: url("./fonts/IBMPlexMono-Bold.ttf");
+}

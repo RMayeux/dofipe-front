@@ -1,0 +1,138 @@
+.recipe__container {
+  width:585px;
+  background-color:#FBFFFE;
+  display:flex;
+  flex-direction: column;
+  flex-wrap:wrap;
+  border-radius:20px;
+}
+/* -------------------------------------------------------------------------- */
+/*                                RECIPE HEADER                               */
+/* -------------------------------------------------------------------------- */
+.recipe__header {
+  width:100%;
+  background-color: #E1FAF9;
+  height:150px;
+  border-radius: 20px;
+  display:flex;
+  justify-content: center;
+  align-content: center;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 25px 25px -20px, rgba(0, 0, 0, 0.3) 0px 15px 30px -15px;
+
+  .recipe__header__img {
+    height:135px;
+    width:135px;
+  }
+}
+/* -------------------------------------------------------------------------- */
+/*                               ITEM METADATA                                */
+/* -------------------------------------------------------------------------- */
+.item__metadata {
+  display:flex;
+  justify-content: center;
+  font-family: "FuturaNow", Helvetica, Arial;
+  align-items: center;
+
+  .item__quantity {
+    border-radius: 5px;
+    width:40px;
+    height:25px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:0px;
+    border:none;
+  }
+
+  .item__name {
+    margin-left:15px;
+  }
+}
+/* -------------------------------------------------------------------------- */
+/*                            RESOURCES CONTAINER                            */
+/* -------------------------------------------------------------------------- */
+.ressources__container {
+  display:flex;
+  justify-content: space-evenly;
+  flex-wrap:wrap;
+  width:100%;
+  list-style-type: none;
+  padding:0;
+  
+  .ressource {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+    margin:25px 0;
+    font-size: 16px;
+    font-family: "FuturaNow", Helvetica, Arial;
+
+
+
+    .ressource__price {
+      width: 100px;
+      height: 25px;
+      position:relative;
+
+      .kamas__logo {
+        height:13px;
+        width:13px;
+        top:7px;
+        right:10px;
+        position:absolute;
+      }
+
+      input {
+        height: 25px;
+        width:100%;
+        background: #FBFFFE;
+        border: 1px solid rgba(0, 0, 0, 0.35);
+        box-sizing: border-box;
+        border-radius: 5px;
+        color:black;
+        font-family: "RobotoRegular", Helvetica, Arial;
+        font-weight:400;
+        padding-right:26px;
+        text-align: right;
+        display:flex;
+        align-items: center;
+
+        &::-webkit-outer-spin-button,&::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+      }
+
+      .input[type=number] {
+        -moz-appearance: textfield;
+      }
+    }
+
+
+
+
+    .ressources__img__container {
+      width:50px;
+      height:50px;
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 10px;
+      background-color: #E1FAF9;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      margin:0 20px;
+  
+      .ressources__img {
+        height:35px;
+        width:35px;
+
+      }
+    }
+  }
+
+
+  
+
+}
