@@ -23,7 +23,10 @@
             :key="value"
             :to="'/' + value.category + '/' + value.uuid"
           >
-            <img class="list__img" :src=" require(`../../assets/images/${value.img}`)" />
+            <img
+              class="list__img"
+              :src="require(`../../assets/images/${value.img}`)"
+            />
             {{ value.name }}
           </router-link>
         </ul>
@@ -44,17 +47,24 @@ export default {
     return {
       data: [],
       searchBarValue: "",
-      hover: false
+      hover: false,
+      awaitingSearch: false
     };
   },
   methods: {
     getEntities() {
       if (this.searchBarValue) {
-        axios
-          .get(
-            `${process.env.VUE_APP_API_URL}/entity?name=${this.searchBarValue}&category=equipements`
-          )
-          .then(response => (this.data = response.data));
+        if (!this.awaitingSearch) {
+          setTimeout(() => {
+            axios
+              .get(
+                `${process.env.VUE_APP_API_URL}/entity?name=${this.searchBarValue}&category=equipements`
+              )
+              .then(response => (this.data = response.data));
+            this.awaitingSearch = false;
+          }, 1000); // 1 sec delay
+        }
+        this.awaitingSearch = true;
       }
     },
     emptyData() {
