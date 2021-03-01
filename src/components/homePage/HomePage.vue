@@ -58,7 +58,7 @@ export default {
           setTimeout(() => {
             axios
               .get(
-                `${process.env.VUE_APP_API_URL}/entity?name=${this.searchBarValue}&category=equipements`
+                `${process.env.VUE_APP_API_URL}/entity?name=${this.searchBarValue}&withRecipe=true`
               )
               .then(response => (this.data = response.data));
             this.awaitingSearch = false;
