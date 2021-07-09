@@ -2,7 +2,9 @@
 ## What is Dofipe
 
 Dofipe is a web application to easily calculate item cost on the game Dofus.
+
 Prices are based on server.
+
 Demo : https://dazzling-blackwell-a1c0b2.netlify.app/
 
 ## Development
